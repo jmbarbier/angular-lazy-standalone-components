@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AngularLazyStandaloneComponents</title>
+  <title>Angular Lazy Standalone Components</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+<div data-ng-load="./module-one/module-one.module#ModuleOneModule"></div>
+<div data-ng-load="./module-two/module-two.module#ModuleTwoModule"></div>
+<h1>This is outside</h1>
+<ng1-comp-one-one></ng1-comp-one-one>
+<ng1-comp-one-one></ng1-comp-one-one>
+<ng1-comp-one-one></ng1-comp-one-one>
+<h1>This is outside also</h1>
+<ng1-comp-one-two></ng1-comp-one-two>
+<h1>This is module two</h1>
+<ng1-comp-two-one></ng1-comp-two-one>
 </body>
 </html>
